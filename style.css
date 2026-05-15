@@ -1,0 +1,48 @@
+body{
+    font-family: sans-serif;
+    text-align: center;
+    margin: 10px;
+    background-color: #f0f0f0;
+}
+
+.stats{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    gap: 8px;
+    margin: 10px;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    max-width: 400px;
+    margin: 0 auto 15px;
+}
+
+.card{
+    aspect-ratio: 1;
+    background-color: rgb(46, 46, 255);
+    border-radius: 2px;
+    color: transparent;
+    font-size: 11px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.card.open{
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(46, 46, 255);
+}
+
+button{
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+}
